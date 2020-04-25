@@ -108,10 +108,10 @@ public class StreamPopulator {
 
       StreamPopulator populator = new StreamPopulator(
           line.getOptionValue("bucketRegion", "eu-west-1"),
-          line.getOptionValue("bucketName", "mbox-test"),
+          line.getOptionValue("bucketName", "kda-demo"),
           line.getOptionValue("objectPrefix", ""),
           line.getOptionValue("streamRegion", DEFAULT_REGION_NAME),
-          line.getOptionValue("streamName", "test4"),
+          line.getOptionValue("streamName", "flink-demo"),
           line.hasOption("aggregate"),
           line.getOptionValue("timestampAttributeName", "DateTime"),
           Float.parseFloat(line.getOptionValue("speedup", "6480")),
